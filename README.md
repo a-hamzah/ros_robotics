@@ -22,6 +22,7 @@ To use this repository
   cd ..
   catkin_make
   source ~/catkin_ws/devel/setup.bash
+  roslaunch ros_robotics dd_robot_rviz.launch model:=dd_robot.urdf
 ```
 
 

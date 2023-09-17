@@ -2,6 +2,22 @@
 <robot name="dd_robot">
 
 
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1" />
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1" />
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1" />
+    </material>
+
 
     <!-- Base Link -->
     <link name="base_link">
@@ -10,6 +26,7 @@
             <geometry>
                 <box size="0.5 0.5 0.25"/>
             </geometry>
+            <material name="blue"/>
         </visual>
 
         <!-- Caster -->
@@ -18,8 +35,8 @@
             <geometry>
                 <sphere radius="0.05" />
             </geometry>
+            <material name="black"/>
         </visual>
-
     </link>
 
 
@@ -30,6 +47,7 @@
             <geometry>
                 <cylinder length="0.1" radius="0.2" />
             </geometry>
+            <material name="orange"/>
         </visual>
     </link>
 
@@ -47,7 +65,10 @@
             <geometry>
                 <cylinder length="0.1" radius="0.2" />
             </geometry>
+            <material name="orange"/>
+
         </visual>
+
     </link>
 
     <joint name="joint_left_wheel" type="continuous">

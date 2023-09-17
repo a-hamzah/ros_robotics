@@ -1,15 +1,14 @@
-
 # Differential Drive Robot with Big Tyres
 
 This repository is being used for a Differential Drive Robot Simulation in Gazebo.
 
-
-## Progress
+## Progress (Platform: ROS1 Kinetic Kame)
 
 - Created a basic base_link (Chassis)
 
-- NEXT: Wheel Integration
+- Wheel Integration
 
+- NEXT: Add collision
 
 ## Usage
 
@@ -24,7 +23,6 @@ To use this repository
   source ~/catkin_ws/devel/setup.bash
   roslaunch ros_robotics dd_robot_rviz.launch model:=dd_robot.urdf
 ```
-
 
 ## Screenshots
 
